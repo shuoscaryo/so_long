@@ -6,7 +6,7 @@
 /*   By: orudek <orudek@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:31:01 by orudek            #+#    #+#             */
-/*   Updated: 2023/08/24 13:29:37 by orudek           ###   ########.fr       */
+/*   Updated: 2023/11/04 13:32:26 by orudek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ t_img	*ft_img_new(void *mlx, char *filename, int width, int height)
 	{
 		height = img->height;
 		width = img->width;
+		return (img);
 	}
 	else if (height <= 0)
 		height = (int)((float)img->height / img->width * width);
